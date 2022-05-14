@@ -1,0 +1,221 @@
+
+
+
+
+
+body{
+    background-color: #181f2a;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    width: 300px;
+    height: 100vh;
+    background-color: #f6c616;
+
+}
+
+.nav-links{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #f7bd03;
+    padding: 10px;
+}
+.link:hover{
+    background-color: #f7bd03;
+    font-weight: 700;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.main-doc{
+    margin-left: 400px;
+    margin-right: 20px;
+
+}
+
+@media(max-width: 1200px){
+    #navbar{
+        width: 150px;
+    }
+    h1{
+        font-size: 22px;
+
+    }
+    .main-doc{
+        margin-left: 250px;
+    }
+}
+
+.main-section{
+    margin: 50px 0px;
+}
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+p{
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+td{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f6c616;
+}
+tr{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    align-items: left;
+}
+
+table, th, td{
+    border: 1px solid #f7bd03;
+    width: 100%;
+
+
+}
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid #f7bd03;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: none;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f7bd03;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #f7bd03;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #f7bd03;
+}
+
+.fl-table tr:nth-child(even) {
+    background: none;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #f7bd03;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #f7bd03;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
